@@ -1,0 +1,35 @@
+{
+  "R1": {
+    "n_days": 4818,
+    "n_breach": 647,
+    "date_min": "1990-01-01",
+    "date_max": "2008-08-29",
+    "P_action_given_breach": 0.05409582689335394,
+    "P_uncond": 0.009587328053355566,
+    "ratio": 5.642429944224178,
+    "p_value": 0.000999000999000999,
+    "no_power": false
+  },
+  "R2": {
+    "n_days": 2772,
+    "n_breach": 482,
+    "date_min": "2008-09-02",
+    "date_max": "2019-08-30",
+    "P_action_given_breach": 0.34647302904564314,
+    "P_uncond": 0.47056686046511625,
+    "ratio": 0.7362886300645637,
+    "p_value": 1.0,
+    "no_power": false
+  },
+  "R3": {
+    "n_days": 1806,
+    "n_breach": 495,
+    "date_min": "2019-09-03",
+    "date_max": "2026-10-30",
+    "P_action_given_breach": 0.11515151515151516,
+    "P_uncond": 0.09686450167973125,
+    "ratio": 1.1887896304081276,
+    "p_value": 0.053946053946053944,
+    "no_power": false
+  }
+}

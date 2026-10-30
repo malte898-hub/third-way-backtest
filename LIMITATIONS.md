@@ -1,0 +1,8 @@
+- Fed press-release archive uncovered 1996–2015 (year pages 404/redirect); R1/R2 policy actions rely on FOMC statements.
+- MOVE available from 2002 only; with-MOVE tests cannot see pre-2008.
+- Reserves series is a splice: H.3 total reserves to 2001, H.4.1 balances from 2002; not the same concept, no level adjustment.
+- Pre-2018 funding-stress proxy (EFFR − 3m bill) cannot observe repo.
+- Treasury actions almost unobserved (n=8, 2026 only); corridor test is Fed-only.
+- Episode-level Treasury sign hides intra-episode spikes (Mar 2020); see MAX_10Y_RISE_4W column.
+- Classifier is an LLM on titles/bodies; 50-row spot-check committed; labels can be re-generated.
+- Rolling regressions on 6m-forward S&P have low R² by nature (partial R² ≈ 0.08); claims are relative (which regressor dominates), not absolute.
