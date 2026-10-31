@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.0 — tests from the author's reply (T6–T8)
+
+GO 2026-10-31. T1–T5 constants not edited. T6–T8 frozen as source=default (no numerical predictions supplied in writing). Run once, published either way.
+
+- DATA: BTC-USD weekly 2014-09→. ACM 10y term premium skipped (NY Fed file is Excel, not CSV).
+- T6 target substitution on T4's 60-month horse race. y1 Δ10y FAIL (X3 25% of 2021→ windows); y2 slope PASS (77%); y3 Treasury-return proxy FAIL (31%); y4 BTC PASS (X2/X3 100%, n=21). Reverse-causation caveat in the report.
+- T7 lag scan: 7b 2021→ ΔMOVE→6m SPX best k=2, partial R² not ≥ 2× k=1 → FAIL (frozen: k≤2 fails).
+- T8 MOVE footprint (exclusion sample): 0/3. R3 12m std(ΔMOVE) is *higher* than R2, not 20% lower; weekly β also higher; distributed lags on reserves/bills not significant. Identification problem stated.
+
 ## 2.1 — correction
 
 Oct–Nov 2025: reserve drain → QT ended 2025-12-01 and reserve-management bill purchases began 2025-12-12, announced at the 2025-10-29 and 2025-12-10 FOMC meetings alongside two 25 bp cuts. First STRESS print 2025-10-15; first plumbing announcement 2025-10-29 (10 sessions). No T1–T5 numbers changed in 2.1.

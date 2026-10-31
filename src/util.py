@@ -139,7 +139,7 @@ def ols(y, X, intercept=True):
     my = mean(y)
     tss = sum((yi - my) ** 2 for yi in y)
     r2 = 1.0 - rss / tss if tss > 1e-18 else 0.0
-    return {"beta": beta, "rss": rss, "tss": tss, "r2": r2, "n": n}
+    return {"beta": beta, "rss": rss, "tss": tss, "r2": r2, "n": n, "xtx": xtx, "resid": resid, "cols": cols}
 
 
 def standardize_cols(X):
@@ -166,3 +166,84 @@ def partial_r2(y, Xstd, j):
     if red is None or red["rss"] < 1e-18:
         return None
     return (red["rss"] - full["rss"]) / red["rss"]
+
+
+def _mat_inv(a):
+    n = len(a)
+    cols = []
+    for i in range(n):
+        e = [0.0] * n
+        e[i] = 1.0
+        c = _gauss_solve(a, e)
+        if c is None:
+            return None
+        cols.append(c)
+    return [[cols[j][i] for j in range(n)] for i in range(n)]
+
+
+def _norm_sf(z: float) -> float:
+    return math.erfc(abs(z) / math.sqrt(2.0))
+
+
+def ols_hac(y, X, intercept=True, lags=None):
+    """OLS + Newey-West HAC se. Two-sided normal p-values (no extra packages)."""
+    fit = ols(y, X, intercept)
+    if fit is None:
+        return None
+    n = fit["n"]
+    resid = fit["resid"]
+    cols = fit["cols"]
+    k = len(cols)
+    if lags is None:
+        lags = max(1, int(4.0 * (n / 100.0) ** (2.0 / 9.0)))
+    S = [[0.0] * k for _ in range(k)]
+
+    def gamma(lag):
+        g = [[0.0] * k for _ in range(k)]
+        for t in range(lag, n):
+            et, es = resid[t], resid[t - lag]
+            for a in range(k):
+                for b in range(k):
+                    g[a][b] += (cols[a][t] * et) * (cols[b][t - lag] * es)
+        return g
+
+    g0 = gamma(0)
+    for a in range(k):
+        for b in range(k):
+            S[a][b] = g0[a][b]
+    for lag in range(1, lags + 1):
+        w = 1.0 - lag / (lags + 1.0)
+        gl = gamma(lag)
+        for a in range(k):
+            for b in range(k):
+                S[a][b] += w * (gl[a][b] + gl[b][a])
+    xtx_inv = _mat_inv(fit["xtx"])
+    if xtx_inv is None:
+        return None
+    tmp = [[0.0] * k for _ in range(k)]
+    V = [[0.0] * k for _ in range(k)]
+    for i in range(k):
+        for j in range(k):
+            tmp[i][j] = sum(xtx_inv[i][p] * S[p][j] for p in range(k))
+    for i in range(k):
+        for j in range(k):
+            V[i][j] = sum(tmp[i][p] * xtx_inv[p][j] for p in range(k))
+    se = [math.sqrt(max(V[i][i], 0.0)) for i in range(k)]
+    tstat = [(fit["beta"][i] / se[i] if se[i] > 1e-18 else float("nan")) for i in range(k)]
+    pval = [_norm_sf(t) if t == t else float("nan") for t in tstat]
+    return {**fit, "se": se, "t": tstat, "p": pval, "V": V, "hac_lags": lags}
+
+
+def wald_sum(fit_hac, idx):
+    if fit_hac is None:
+        return None
+    s = sum(fit_hac["beta"][i] for i in idx)
+    var = 0.0
+    V = fit_hac["V"]
+    for a in idx:
+        for b in idx:
+            var += V[a][b]
+    se = math.sqrt(max(var, 0.0))
+    t = s / se if se > 1e-18 else float("nan")
+    p = _norm_sf(t) if t == t else float("nan")
+    return {"sum": s, "se": se, "t": t, "p": p}

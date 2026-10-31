@@ -39,6 +39,23 @@ Oct–Nov 2025: reserve drain → QT ended 2025-12-01 and reserve-management bil
 
 The 2025-10-29 statement gives no money-market attribution; press-conference remarks are not in the corpus.
 
+## Round 3 — tests from the author's reply
+
+Howell did not supply numerical predictions in writing. Every cut-off below is source=default, frozen before the run. T1–T5 constants were not edited.
+
+| Test | Who set it | Frozen value | Result |
+|---|---|---|---|
+| T6 y1 (d10y) | default | X3 (X2 or X3 for y4) largest partial R² in ≥40% of windows ending 2021→ | FAIL share=25.0% n=64 |
+| T6 y2 (d_slope) | default | X3 (X2 or X3 for y4) largest partial R² in ≥40% of windows ending 2021→ | PASS share=76.6% n=64 |
+| T6 y3 (tsy_ret) | default | X3 (X2 or X3 for y4) largest partial R² in ≥40% of windows ending 2021→ | FAIL share=31.2% n=64 |
+| T6 y4 (btc) | default | X3 (X2 or X3 for y4) largest partial R² in ≥40% of windows ending 2021→ | PASS share=100.0% n=21 |
+| T6 ACM y2b | default | skip if no CSV | skipped (NY Fed ACM is Excel, not CSV) |
+| T6 caveat | — | reverse causation | reserves and yields share the Fed reaction function; a positive result is consistent with reverse causation |
+| T7b 2021→ ΔMOVE→SPX | default | best k ∈ [3,9] and partial R² ≥ 2× k=1; flat or k≤2 → FAIL | FAIL best k=2 pr2=0.0425; k1 pr2=0.0398 |
+| T7 p-values | default | none (overlapping forwards) | partial R² only |
+| T8 MOVE footprint | default | 2 of 3: R3 12m std(ΔMOVE) −20%; R3 weekly β −20%; R3 d-res/d-bill → ΔMOVE negative p<0.05 not R2 | FAIL 0/3 on exclusion sample; a=False b=False c=False |
+| T8 identification | — | exclusion 2020-03→2021-12 is partial mitigation | lower vol in R3 is also consistent with ZIRP and forward guidance; the exclusion window is partial mitigation, not a fix |
+
 ## Key numbers
 
 {
@@ -143,5 +160,298 @@ The 2025-10-29 statement gives no money-market attribution; press-conference rem
     "placebo_p_first": 0.7254901960784313,
     "criterion": "blind splits near 2008 and 2019\u201320 (\u00b118m), not elsewhere",
     "reason": "breaks ['2020-02', '2007-07', '2012-07']; extra=['2012-07']; placebo p=0.73"
+  },
+  "T6": {
+    "acm": "skipped \u2014 NY Fed ACM file is Excel (.xls), not keyless CSV",
+    "source": "default",
+    "criterion": "X3 (or X2 for y4) largest partial R2 in >=40% of windows ending 2021\u2192",
+    "caveat": "reserves and yields share the Fed reaction function; a positive result is consistent with reverse causation",
+    "targets": {
+      "y1": {
+        "name": "d10y",
+        "verdict": "FAIL",
+        "share_X3or_want_2021_withMOVE": 0.25,
+        "n_2021_withMOVE": 64,
+        "want": [
+          "X3"
+        ],
+        "share_withoutMOVE": 0.234375,
+        "n_withoutMOVE": 64,
+        "n_windows": 219,
+        "date_range": "2003-03 \u2192 2026-04"
+      },
+      "y2": {
+        "name": "d_slope",
+        "verdict": "PASS",
+        "share_X3or_want_2021_withMOVE": 0.765625,
+        "n_2021_withMOVE": 64,
+        "want": [
+          "X3"
+        ],
+        "share_withoutMOVE": 0.734375,
+        "n_withoutMOVE": 64,
+        "n_windows": 219,
+        "date_range": "2003-03 \u2192 2026-04"
+      },
+      "y3": {
+        "name": "tsy_ret",
+        "verdict": "FAIL",
+        "share_X3or_want_2021_withMOVE": 0.3125,
+        "n_2021_withMOVE": 64,
+        "want": [
+          "X3"
+        ],
+        "share_withoutMOVE": 0.296875,
+        "n_withoutMOVE": 64,
+        "n_windows": 219,
+        "date_range": "2003-03 \u2192 2026-04"
+      },
+      "y4": {
+        "name": "btc",
+        "verdict": "PASS",
+        "share_X3or_want_2021_withMOVE": 1.0,
+        "n_2021_withMOVE": 21,
+        "want": [
+          "X3",
+          "X2"
+        ],
+        "share_withoutMOVE": 1.0,
+        "n_withoutMOVE": 21,
+        "n_windows": 21,
+        "date_range": "2019-09 \u2192 2026-04"
+      }
+    },
+    "verdict": "FAIL",
+    "reason": "y1 FAIL share=25.0% n=64; y2 PASS share=76.6% n=64; y3 FAIL share=31.2% n=64; y4 PASS share=100.0% n=21"
+  },
+  "T7": {
+    "verdict": "FAIL",
+    "source": "default",
+    "branch_scored": "7b 2021 dMOVE \u2192 6m-forward SPX",
+    "best_k": 2,
+    "best_pr2": 0.04248611648913603,
+    "k1_pr2": 0.03982982081156505,
+    "criterion": "7b 2021\u2192 best k in [3,9] and pr2 >= 2.0\u00d7 k=1; flat or best k<=2 \u2192 FAIL",
+    "reason": "best k=2 pr2=0.0425; k1 pr2=0.0398",
+    "note": "overlapping 6m-forward windows: partial R2 only, no p-values",
+    "7a_best": {
+      "from_2003": {
+        "spx": {
+          "k": 4,
+          "n": 274,
+          "pr2": 0.07015061522558985,
+          "beta": 0.014169739225385768
+        },
+        "y1": {
+          "k": 3,
+          "n": 275,
+          "pr2": 0.028718527636274582,
+          "beta": 0.05062244365216205
+        },
+        "y2": {
+          "k": 4,
+          "n": 274,
+          "pr2": 0.10579114410546087,
+          "beta": 0.07580890876420568
+        },
+        "y3": {
+          "k": 3,
+          "n": 275,
+          "pr2": 0.029733707476125693,
+          "beta": -0.004263450662838732
+        },
+        "y4": {
+          "k": 4,
+          "n": 140,
+          "pr2": 0.17532698012853265,
+          "beta": 0.12941106105974617
+        }
+      },
+      "from_2021": {
+        "spx": {
+          "k": 5,
+          "n": 64,
+          "pr2": 0.31460607218822834,
+          "beta": 0.03762878505460638
+        },
+        "y1": {
+          "k": 9,
+          "n": 64,
+          "pr2": 0.2259978872062447,
+          "beta": -0.10346409553682762
+        },
+        "y2": {
+          "k": 6,
+          "n": 64,
+          "pr2": 0.44033336036750403,
+          "beta": 0.20289964074854153
+        },
+        "y3": {
+          "k": 9,
+          "n": 64,
+          "pr2": 0.187183371201059,
+          "beta": 0.008022037352062505
+        },
+        "y4": {
+          "k": 5,
+          "n": 64,
+          "pr2": 0.21157591810706,
+          "beta": 0.13583662453856918
+        }
+      }
+    },
+    "7b_best": {
+      "from_2003": {
+        "spx": {
+          "k": 10,
+          "n": 271,
+          "pr2": 0.016314175180286328,
+          "beta": -0.0008881916138661631
+        },
+        "y1": {
+          "k": 2,
+          "n": 279,
+          "pr2": 0.006244906547245521,
+          "beta": 0.0030925762518399366
+        },
+        "y2": {
+          "k": 7,
+          "n": 274,
+          "pr2": 0.004937150516311495,
+          "beta": -0.0021342298728099715
+        },
+        "y3": {
+          "k": 2,
+          "n": 279,
+          "pr2": 0.006384254539523959,
+          "beta": -0.0002585032600568607
+        },
+        "y4": {
+          "k": 2,
+          "n": 140,
+          "pr2": 0.01640760393621421,
+          "beta": -0.005489577523321532
+        },
+        "dlog_res": {
+          "k": 10,
+          "n": 277,
+          "pr2": 0.011504570560395999,
+          "beta": 0.002081422188173302
+        },
+        "dbill": {
+          "k": 11,
+          "n": 275,
+          "pr2": 0.00809405744360514,
+          "beta": 0.005159364944787944
+        }
+      },
+      "from_2021": {
+        "spx": {
+          "k": 2,
+          "n": 64,
+          "pr2": 0.04248611648913603,
+          "beta": -0.0012726040005132055
+        },
+        "y1": {
+          "k": 1,
+          "n": 64,
+          "pr2": 0.056059491734067546,
+          "beta": 0.008882380725281344
+        },
+        "y2": {
+          "k": 3,
+          "n": 64,
+          "pr2": 0.02783135941985726,
+          "beta": -0.004939521586401028
+        },
+        "y3": {
+          "k": 1,
+          "n": 64,
+          "pr2": 0.05777600380296888,
+          "beta": -0.000768231530044101
+        },
+        "y4": {
+          "k": 1,
+          "n": 64,
+          "pr2": 0.01951326100340456,
+          "beta": -0.0037931523160401274
+        },
+        "dlog_res": {
+          "k": 1,
+          "n": 70,
+          "pr2": 0.04893389863962894,
+          "beta": 0.0007090619337496387
+        },
+        "dbill": {
+          "k": 2,
+          "n": 69,
+          "pr2": 0.0588222717848621,
+          "beta": -0.009636849458111163
+        }
+      }
+    }
+  },
+  "T8": {
+    "verdict": "FAIL",
+    "source": "default",
+    "scored_sample": "R2/R3 with 2020-03\u21922021-12 excluded",
+    "n_of_3": 0,
+    "a": {
+      "a_std_R2": 9.700877342382542,
+      "a_std_R3": 15.229621575296571,
+      "a_n_R2": 105,
+      "a_n_R3": 53,
+      "a_drop": -0.5699220841355537,
+      "a_pass": false
+    },
+    "b": {
+      "b_beta_R2": 30.71675926734963,
+      "b_beta_R3": 36.19581073946821,
+      "b_n_R2": 503,
+      "b_n_R3": 278,
+      "b_drop": -0.17837335717712044,
+      "b_pass": false
+    },
+    "c": {
+      "pass": false,
+      "R2": {
+        "res": {
+          "n": 116,
+          "sum": -20.33513705729522,
+          "p": 0.5702992633418436,
+          "t": -0.567610812870987
+        },
+        "bill": {
+          "n": 116,
+          "sum": 1.0764834791329694,
+          "p": 0.7075608402857136,
+          "t": 0.3751339619561519
+        }
+      },
+      "R3": {
+        "res": {
+          "n": 64,
+          "sum": -37.49415391354562,
+          "p": 0.7169572948153577,
+          "t": -0.3625282793708484
+        },
+        "bill": {
+          "n": 64,
+          "sum": -2.4561854762401287,
+          "p": 0.6076521721481764,
+          "t": -0.513427701636083
+        }
+      }
+    },
+    "full": {
+      "a_pass": false,
+      "b_pass": false,
+      "c_pass": false,
+      "verdict": "FAIL",
+      "n_pass": 0
+    },
+    "criterion": "2 of 3: R3 12m std(\u0394MOVE) \u221220%; R3 weekly \u03b2(\u0394MOVE,|\u039410y|) \u221220%; R3 d-res/d-bill lags\u2192\u0394MOVE negative p<0.05, not R2",
+    "identification": "lower vol in R3 is also consistent with ZIRP and forward guidance; the exclusion window is partial mitigation, not a fix",
+    "reason": "0/3 on exclusion sample; a=False b=False c=False"
   }
 }

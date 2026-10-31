@@ -11,11 +11,12 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from constants import REPORT_DIR, RESULTS
-from src import test_t1, test_t2, test_t3, test_t4, test_t5
+from src import test_t1, test_t2, test_t3, test_t4, test_t5, test_t6, test_t7, test_t8
 
 
 def write_report(out: dict) -> None:
     t1, t2, t3, t4, t5 = out["T1"], out["T2"], out["T3"], out["T4"], out["T5"]
+    t6, t7, t8 = out.get("T6") or {}, out.get("T7") or {}, out.get("T8") or {}
     sh = t4.get("without_MOVE") or {}
     lines = []
     lines.append("# Testing the Third Monetary Regime")
@@ -59,6 +60,30 @@ def write_report(out: dict) -> None:
     lines.append("")
     lines.append("The 2025-10-29 statement gives no money-market attribution; press-conference remarks are not in the corpus.")
     lines.append("")
+    lines.append("## Round 3 — tests from the author's reply")
+    lines.append("")
+    lines.append("Howell did not supply numerical predictions in writing. Every cut-off below is source=default, frozen before the run. T1–T5 constants were not edited.")
+    lines.append("")
+    lines.append("| Test | Who set it | Frozen value | Result |")
+    lines.append("|---|---|---|---|")
+    if t6:
+        for k, v in (t6.get("targets") or {}).items():
+            lines.append(
+                f"| T6 {k} ({v.get('name')}) | default | X3 (X2 or X3 for y4) largest partial R² in ≥40% of windows ending 2021→ | {v.get('verdict')} share={v.get('share_X3or_want_2021_withMOVE', 0):.1%} n={v.get('n_2021_withMOVE')} |"
+            )
+        lines.append(f"| T6 ACM y2b | default | skip if no CSV | skipped (NY Fed ACM is Excel, not CSV) |")
+        lines.append(f"| T6 caveat | — | reverse causation | {t6.get('caveat')} |")
+    if t7:
+        lines.append(
+            f"| T7b 2021→ ΔMOVE→SPX | default | best k ∈ [3,9] and partial R² ≥ 2× k=1; flat or k≤2 → FAIL | {t7.get('verdict')} {t7.get('reason')} |"
+        )
+        lines.append("| T7 p-values | default | none (overlapping forwards) | partial R² only |")
+    if t8:
+        lines.append(
+            f"| T8 MOVE footprint | default | 2 of 3: R3 12m std(ΔMOVE) −20%; R3 weekly β −20%; R3 d-res/d-bill → ΔMOVE negative p<0.05 not R2 | {t8.get('verdict')} {t8.get('reason')} |"
+        )
+        lines.append(f"| T8 identification | — | exclusion 2020-03→2021-12 is partial mitigation | {t8.get('identification')} |")
+    lines.append("")
     lines.append("## Key numbers")
     lines.append("")
     lines.append(json.dumps({k: {kk: vv for kk, vv in v.items() if not str(kk).startswith("_")} for k, v in out.items()}, indent=2, default=str))
@@ -74,7 +99,10 @@ def from_cache() -> dict:
     t4 = test_t4.run()
     t5 = test_t5.run(t4)
     t4.pop("_xy_nomove", None)
-    out = {"T1": t1, "T2": t2, "T3": t3, "T4": t4, "T5": t5}
+    t6 = test_t6.run()
+    t7 = test_t7.run()
+    t8 = test_t8.run()
+    out = {"T1": t1, "T2": t2, "T3": t3, "T4": t4, "T5": t5, "T6": t6, "T7": t7, "T8": t8}
     write_report(out)
     return out
 

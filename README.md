@@ -22,7 +22,7 @@ python run.py --fetch               # rebuilds data/ from public sources, ≈1 h
 
 Classification is optional. Labelled `data/actions.csv` is committed. To re-label, set `MODEL_CMD` in `constants.py` to any local or API command (prompt in `src/classify.py`).
 
-Pre-registration: `constants.py` was frozen before round 1. Round 2 changed instruments only (see CHANGELOG). Round 2.2 added FOMC statements 2020–2026. Round 2.3 classifies implementation notes as ADMIN unless the Desk directive records an operational change; T2/T3 rerun; thresholds unchanged. Thresholds were never tuned to results.
+Pre-registration: `constants.py` was frozen before round 1. Round 2 changed instruments only (see CHANGELOG). Round 2.2 added FOMC statements 2020–2026. Round 2.3 classifies implementation notes as ADMIN unless the Desk directive records an operational change. Round 3 adds T6–T8 (source=default) without touching T1–T5 cut-offs. Thresholds were never tuned to results.
 
 What would change the verdict: (1) a dealer-balance-sheet multiplier (NY Fed FR 2004) in place of 1/MOVE; (2) a Treasury-issuance event study for the corridor. Pull requests welcome; a PR that flips a verdict is the point.
 

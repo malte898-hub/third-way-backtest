@@ -55,6 +55,30 @@ CPI_CUT = 3.0
 IORB_OFFSET = 0.10
 SPLICE_DATE = "2002-01-01"
 
+# --- Round 3 (author objections). Frozen 2026-10-31 before the run. ---
+# Every line tagged. Howell's name only if he supplied the number in writing.
+T6_SHARE_MIN = 0.40          # source=default
+T6_FWD = 6                   # source=default
+T6_BTC_START = "2019-09"     # source=default
+T6_DURATION = 8              # source=default  (Treasury return proxy duration)
+T7_K_LO = 1                  # source=default
+T7_K_HI = 12                 # source=default
+T7_BEST_K_LO = 3             # source=default
+T7_BEST_K_HI = 9             # source=default
+T7_PR2_MULT = 2.0            # source=default
+T7_SAMPLE_A = "2003-01"      # source=default
+T7_SAMPLE_B = "2021-01"      # source=default
+T8_R2_LO = "2010-01"         # source=default
+T8_R2_HI = "2019-08"         # source=default
+T8_R3_LO = "2019-09"         # source=default
+T8_VOL_DROP = 0.20           # source=default
+T8_BETA_DROP = 0.20          # source=default
+T8_PMAX = 0.05               # source=default
+T8_EXCL_LO = "2020-03"       # source=default
+T8_EXCL_HI = "2021-12"       # source=default
+T8_DLAGS = 6                 # source=default
+T8_ROLL_STD_M = 12           # source=default
+
 LABELS = ("RATE", "QE_QT", "PLUMBING", "REGULATORY", "ADMIN", "OTHER")
 CLASSIFIER_CHECK_N = 50
 CLASSIFIER_MODEL = "glm-4.7-flash"
