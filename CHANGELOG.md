@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1 — T7a reported with X1/X2 lag controls
+
+No new cut-offs. T1–T8 constants untouched. Repeat 7a with X1 (Δrate) and X2 (Δlog reserves) lagged k=1..12 on the same targets and samples. CSV `results/t7a_controls.csv`. Four panels (SPX, slope, 10y, BTC) of partial R² by k for X1/X2/X3. Report table is exploratory: k=1 vs best k, X3 vs X2, 2021→ n≈64, overlapping 6m forwards. README scoreboard now includes T6–T8; BTC row marked lenient (X2 or X3), n=21.
+
 ## 3.0 — tests from the author's reply (T6–T8)
 
 GO 2026-10-31. T1–T5 constants not edited. T6–T8 frozen as source=default (no numerical predictions supplied in writing). Run once, published either way.

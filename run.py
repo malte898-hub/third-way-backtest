@@ -84,6 +84,42 @@ def write_report(out: dict) -> None:
         )
         lines.append(f"| T8 identification | — | exclusion 2020-03→2021-12 is partial mitigation | {t8.get('identification')} |")
     lines.append("")
+    expl = (t7 or {}).get("t7a_exploratory") or []
+    if expl:
+        lines.append("## T7a — exploratory, no frozen criterion")
+        lines.append("")
+        lines.append(t7.get("t7a_note") or "12 lags scanned, overlapping 6m forwards, n≈64 months in 2021→ — treat as hypothesis-generating.")
+        lines.append("")
+        lines.append("| Target | X3 k=1 | X3 best k | X3 best | X2 k=1 | X2 best k | X2 best | n |")
+        lines.append("|---|---|---|---|---|---|---|---|")
+        any_flag = False
+        for r in expl:
+            def f(x):
+                return "—" if x is None else f"{x:.3f}"
+            lines.append(
+                f"| {r['target']} | {f(r['X3_k1'])} | {r['X3_best_k']} | {f(r['X3_best'])} | "
+                f"{f(r['X2_k1'])} | {r['X2_best_k']} | {f(r['X2_best'])} | {r['n']} |"
+            )
+        lines.append("")
+        for r in expl:
+            x3b, x2b = r.get("X3_best"), r.get("X2_best")
+            if r.get("X3_gt_X2_at_best"):
+                any_flag = True
+                sent = (
+                    f"{r['target']}: X3 best-lag partial R² {x3b:.3f} (k={r['X3_best_k']}) exceeds "
+                    f"X2 {x2b:.3f} (k={r['X2_best_k']}). This revisits the round-2 T4 reading that "
+                    f"reserve quantity dominated effective liquidity in 2021→ windows."
+                )
+            else:
+                sent = (
+                    f"{r['target']}: X2 best-lag partial R² {x2b:.3f} (k={r['X2_best_k']}) is not below "
+                    f"X3 {x3b:.3f} (k={r['X3_best_k']}). Does not reverse the round-2 T4 reading."
+                )
+            lines.append(sent)
+            lines.append("")
+        if not any_flag:
+            lines.append("No target has X3 > X2 at the best lag, so T7a does not reverse the round-2 T4 reading.")
+            lines.append("")
     lines.append("## Key numbers")
     lines.append("")
     lines.append(json.dumps({k: {kk: vv for kk, vv in v.items() if not str(kk).startswith("_")} for k, v in out.items()}, indent=2, default=str))

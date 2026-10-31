@@ -25,12 +25,16 @@ from src.panel import monthly_panel, targets_at, x_row
 from src.util import add_months, dump_csv, ols
 
 
-def _x3_at(by, ym, with_move=True, with_bill=True):
+def _xj_at(by, ym, j, with_move=True, with_bill=True):
     ym3 = add_months(ym, -3)
     if ym not in by or ym3 not in by:
         return None
     xs = x_row(by[ym], by[ym3], with_move, with_bill)
-    return None if xs is None else xs[2]
+    return None if xs is None else xs[j]
+
+
+def _x3_at(by, ym, with_move=True, with_bill=True):
+    return _xj_at(by, ym, 2, with_move, with_bill)
 
 
 def _dmove(by, ym):
@@ -128,6 +132,75 @@ def run() -> dict:
 
     dump_csv(RESULTS / "t7_lags.csv", csv_rows, ["branch", "sample", "y", "k", "n", "pr2", "beta"])
 
+    # F1: 7a X1/X2/X3 lag controls (exploratory, no frozen criterion)
+    ctrl_rows = []
+    ctrl = {}  # sample -> y -> xname -> recs
+    xfuns = {
+        "X1": lambda by, ym: _xj_at(by, ym, 0, True, True),
+        "X2": lambda by, ym: _xj_at(by, ym, 1, True, True),
+        "X3": lambda by, ym: _xj_at(by, ym, 2, True, True),
+    }
+    y_ctrl = ("spx", "y1", "y2", "y4")  # SPX, 10y, slope, BTC
+    for sname, sm in samples.items():
+        ctrl[sname] = {}
+        for yname in y_ctrl:
+            yfun = ymap[yname]
+            ctrl[sname][yname] = {}
+            for xn, xf in xfuns.items():
+                recs = _scan(by, sm, xf, yfun)
+                ctrl[sname][yname][xn] = recs
+                for r in recs:
+                    ctrl_rows.append({"sample": sname, "y": yname, "x": xn, **r})
+    dump_csv(RESULTS / "t7a_controls.csv", ctrl_rows, ["sample", "y", "x", "k", "n", "pr2", "beta"])
+
+    def k1_and_best(recs):
+        k1 = next((r for r in recs if r["k"] == 1), None)
+        b = _best(recs)
+        return k1, b
+
+    expl = []
+    for yname, label in (("spx", "SPX"), ("y2", "slope"), ("y1", "10y"), ("y4", "BTC")):
+        x3 = ctrl["from_2021"][yname]["X3"]
+        x2 = ctrl["from_2021"][yname]["X2"]
+        k1_3, b3 = k1_and_best(x3)
+        k1_2, b2 = k1_and_best(x2)
+        n = (k1_3 or {}).get("n")
+        x3_gt = (
+            b3 is not None
+            and b2 is not None
+            and b3["pr2"] is not None
+            and b2["pr2"] is not None
+            and b3["pr2"] > b2["pr2"]
+        )
+        expl.append({
+            "target": label,
+            "y": yname,
+            "n": n,
+            "X3_k1": None if k1_3 is None else k1_3["pr2"],
+            "X3_best_k": None if b3 is None else b3["k"],
+            "X3_best": None if b3 is None else b3["pr2"],
+            "X2_k1": None if k1_2 is None else k1_2["pr2"],
+            "X2_best_k": None if b2 is None else b2["k"],
+            "X2_best": None if b2 is None else b2["pr2"],
+            "X3_gt_X2_at_best": x3_gt,
+        })
+
+    def curve(recs):
+        return [(r["k"], r["pr2"] or 0.0) for r in recs]
+
+    titles = {"spx": "SPX", "y2": "slope", "y1": "10y", "y4": "BTC"}
+    files = {"spx": "t7a_spx.png", "y2": "t7a_slope.png", "y1": "t7a_10y.png", "y4": "t7a_btc.png"}
+    for yname in y_ctrl:
+        line_chart(
+            REPORT_DIR / files[yname],
+            [
+                ("X1 Δrate", curve(ctrl["from_2021"][yname]["X1"])),
+                ("X2 Δlog reserves", curve(ctrl["from_2021"][yname]["X2"])),
+                ("X3 effective liq", curve(ctrl["from_2021"][yname]["X3"])),
+            ],
+            f"T7a 2021→ {titles[yname]} partial R2 by lag k",
+        )
+
     # prediction: 7b 2021→ ΔMOVE → T4 target (spx); best k in [3,9] and pr2 >= 2 * k=1
     recs = out7b["from_2021"]["spx"]
     best = _best(recs)
@@ -146,10 +219,7 @@ def run() -> dict:
     if flat or fail_k:
         verdict_7b = "FAIL"
 
-    # charts: 7a X3→y1 and 7b ΔMOVE→spx / dlog_res
-    def curve(recs):
-        return [(r["k"], r["pr2"] or 0.0) for r in recs]
-
+    # charts: keep 7b lag curves
     line_chart(
         REPORT_DIR / "t7a_lags.png",
         [
@@ -186,4 +256,6 @@ def run() -> dict:
         "note": "overlapping 6m-forward windows: partial R2 only, no p-values",
         "7a_best": {s: {y: _best(out7a[s][y]) for y in out7a[s]} for s in out7a},
         "7b_best": {s: {y: _best(out7b[s][y]) for y in out7b[s]} for s in out7b},
+        "t7a_exploratory": expl,
+        "t7a_note": "12 lags scanned, overlapping 6m forwards, n≈64 months in 2021→ — treat as hypothesis-generating. No frozen criterion.",
     }

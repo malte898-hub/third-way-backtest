@@ -56,6 +56,25 @@ Howell did not supply numerical predictions in writing. Every cut-off below is s
 | T8 MOVE footprint | default | 2 of 3: R3 12m std(ΔMOVE) −20%; R3 weekly β −20%; R3 d-res/d-bill → ΔMOVE negative p<0.05 not R2 | FAIL 0/3 on exclusion sample; a=False b=False c=False |
 | T8 identification | — | exclusion 2020-03→2021-12 is partial mitigation | lower vol in R3 is also consistent with ZIRP and forward guidance; the exclusion window is partial mitigation, not a fix |
 
+## T7a — exploratory, no frozen criterion
+
+12 lags scanned, overlapping 6m forwards, n≈64 months in 2021→ — treat as hypothesis-generating. No frozen criterion.
+
+| Target | X3 k=1 | X3 best k | X3 best | X2 k=1 | X2 best k | X2 best | n |
+|---|---|---|---|---|---|---|---|
+| SPX | 0.123 | 5 | 0.315 | 0.056 | 7 | 0.107 | 64 |
+| slope | 0.262 | 6 | 0.440 | 0.000 | 12 | 0.098 | 64 |
+| 10y | 0.081 | 9 | 0.226 | 0.019 | 7 | 0.114 | 64 |
+| BTC | 0.154 | 5 | 0.212 | 0.041 | 7 | 0.073 | 64 |
+
+SPX: X3 best-lag partial R² 0.315 (k=5) exceeds X2 0.107 (k=7). This revisits the round-2 T4 reading that reserve quantity dominated effective liquidity in 2021→ windows.
+
+slope: X3 best-lag partial R² 0.440 (k=6) exceeds X2 0.098 (k=12). This revisits the round-2 T4 reading that reserve quantity dominated effective liquidity in 2021→ windows.
+
+10y: X3 best-lag partial R² 0.226 (k=9) exceeds X2 0.114 (k=7). This revisits the round-2 T4 reading that reserve quantity dominated effective liquidity in 2021→ windows.
+
+BTC: X3 best-lag partial R² 0.212 (k=5) exceeds X2 0.073 (k=7). This revisits the round-2 T4 reading that reserve quantity dominated effective liquidity in 2021→ windows.
+
 ## Key numbers
 
 {
@@ -389,7 +408,58 @@ Howell did not supply numerical predictions in writing. Every cut-off below is s
           "beta": -0.009636849458111163
         }
       }
-    }
+    },
+    "t7a_exploratory": [
+      {
+        "target": "SPX",
+        "y": "spx",
+        "n": 64,
+        "X3_k1": 0.12328488957333927,
+        "X3_best_k": 5,
+        "X3_best": 0.31460607218822834,
+        "X2_k1": 0.05583810936586253,
+        "X2_best_k": 7,
+        "X2_best": 0.10661073493879392,
+        "X3_gt_X2_at_best": true
+      },
+      {
+        "target": "slope",
+        "y": "y2",
+        "n": 64,
+        "X3_k1": 0.2617827215821589,
+        "X3_best_k": 6,
+        "X3_best": 0.44033336036750403,
+        "X2_k1": 0.0004985081563539939,
+        "X2_best_k": 12,
+        "X2_best": 0.09775807475783915,
+        "X3_gt_X2_at_best": true
+      },
+      {
+        "target": "10y",
+        "y": "y1",
+        "n": 64,
+        "X3_k1": 0.08101912444435477,
+        "X3_best_k": 9,
+        "X3_best": 0.2259978872062447,
+        "X2_k1": 0.018514963110276006,
+        "X2_best_k": 7,
+        "X2_best": 0.11363640016553367,
+        "X3_gt_X2_at_best": true
+      },
+      {
+        "target": "BTC",
+        "y": "y4",
+        "n": 64,
+        "X3_k1": 0.15401447807638258,
+        "X3_best_k": 5,
+        "X3_best": 0.21157591810706,
+        "X2_k1": 0.041203486920064036,
+        "X2_best_k": 7,
+        "X2_best": 0.07282508060884219,
+        "X3_gt_X2_at_best": true
+      }
+    ],
+    "t7a_note": "12 lags scanned, overlapping 6m forwards, n\u224864 months in 2021\u2192 \u2014 treat as hypothesis-generating. No frozen criterion."
   },
   "T8": {
     "verdict": "FAIL",
