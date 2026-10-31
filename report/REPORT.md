@@ -75,6 +75,30 @@ slope: X3 best-lag partial R² 0.440 (k=6) exceeds X2 0.098 (k=12). This revisit
 
 BTC: X3 best-lag partial R² 0.212 (k=5) exceeds X2 0.073 (k=7). This revisits the round-2 T4 reading that reserve quantity dominated effective liquidity in 2021→ windows.
 
+## Round 4 — confirmatory OOS of T7a lags
+
+source=default. Fit 2021-01→2023-12; test 2024-01→2026-10 (origins through 2026-04). Frozen k: SPX=5, slope=6, 10y=9, BTC=5. PASS if X3 OOS R² > X2 OOS R² and > 0 for SPX and slope.
+
+**FAIL** — SPX X3=0.005 X2=-0.587 ok; slope X3=-0.603 X2=-2.784 fail
+
+| Target | k | X1 OOS R² | X2 OOS R² | X3 OOS R² | n_fit | n_test |
+|---|---|---|---|---|---|---|
+| SPX | 5 | -2.219 | -0.587 | 0.005 | 36 | 28 |
+| slope | 6 | -6.707 | -2.784 | -0.603 | 36 | 28 |
+| 10y | 9 | -0.966 | -0.964 | -0.694 | 36 | 28 |
+| BTC | 5 | -0.605 | -0.021 | -0.641 | 36 | 28 |
+
+Holdout tape: `results/t7a_forward.csv` (frozen coefficients, no refit).
+
+Decomposition (exploratory, no cut-off) — which leg carries the 2021→ lag: X3a = Δlog(reserves/MOVE), X3b = Δbill share.
+
+| Target | X3a best k | X3a pr² | X3b best k | X3b pr² | carries |
+|---|---|---|---|---|---|
+| SPX | 1 | 0.167 | 6 | 0.345 | X3b Δbill share |
+| slope | 2 | 0.114 | 6 | 0.419 | X3b Δbill share |
+| 10y | 1 | 0.123 | 9 | 0.250 | X3b Δbill share |
+| BTC | 1 | 0.070 | 5 | 0.221 | X3b Δbill share |
+
 ## Key numbers
 
 {
@@ -523,5 +547,160 @@ BTC: X3 best-lag partial R² 0.212 (k=5) exceeds X2 0.073 (k=7). This revisits t
     "criterion": "2 of 3: R3 12m std(\u0394MOVE) \u221220%; R3 weekly \u03b2(\u0394MOVE,|\u039410y|) \u221220%; R3 d-res/d-bill lags\u2192\u0394MOVE negative p<0.05, not R2",
     "identification": "lower vol in R3 is also consistent with ZIRP and forward guidance; the exclusion window is partial mitigation, not a fix",
     "reason": "0/3 on exclusion sample; a=False b=False c=False"
+  },
+  "R4": {
+    "verdict": "FAIL",
+    "source": "default",
+    "criterion": "X3 OOS R\u00b2 > X2 OOS R\u00b2 and > 0 for SPX and slope",
+    "fit": "2021-01\u21922023-12",
+    "test": "2024-01\u21922026-10 (origins through 2026-04)",
+    "k": {
+      "spx": 5,
+      "y2": 6,
+      "y1": 9,
+      "y4": 5
+    },
+    "per": {
+      "spx": {
+        "k": 5,
+        "label": "SPX",
+        "X1": {
+          "oos_r2": -2.2186618096039066,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.01298993810670383,
+          "b": 0.06692427839896292
+        },
+        "X2": {
+          "oos_r2": -0.5874254001711865,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.04266568931739502,
+          "b": -0.22570039012392573
+        },
+        "X3": {
+          "oos_r2": 0.005181703946213201,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.07262386287567085,
+          "b": 0.046631430015509095
+        },
+        "pass_cell": true
+      },
+      "y2": {
+        "k": 6,
+        "label": "slope",
+        "X1": {
+          "oos_r2": -6.707497252179685,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": -0.49397747676883663,
+          "b": 0.5154077760754978
+        },
+        "X2": {
+          "oos_r2": -2.7839674609371636,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": -0.28043838960539175,
+          "b": -1.6113295270067427
+        },
+        "X3": {
+          "oos_r2": -0.6026013086450286,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": -0.14201373453078098,
+          "b": 0.21802006008188723
+        },
+        "pass_cell": false
+      },
+      "y1": {
+        "k": 9,
+        "label": "10y",
+        "X1": {
+          "oos_r2": -0.9658735359203894,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.465628858436883,
+          "b": 0.025511554987806384
+        },
+        "X2": {
+          "oos_r2": -0.9644648878377113,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.4663786386348294,
+          "b": 0.15346229681691423
+        },
+        "X3": {
+          "oos_r2": -0.6942694076980029,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.4874179217462647,
+          "b": -0.09714114851335744
+        },
+        "pass_cell": false
+      },
+      "y4": {
+        "k": 5,
+        "label": "BTC",
+        "X1": {
+          "oos_r2": -0.6053427284040522,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": -0.1139556577518836,
+          "b": 0.4074282164734469
+        },
+        "X2": {
+          "oos_r2": -0.021185977021493496,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.06483498447286394,
+          "b": -1.0507904210966996
+        },
+        "X3": {
+          "oos_r2": -0.6414959440974966,
+          "n_fit": 36,
+          "n_test": 28,
+          "a": 0.19613713483190576,
+          "b": 0.2049104914018856
+        },
+        "pass_cell": false
+      }
+    },
+    "spx_ok": true,
+    "slope_ok": false,
+    "decomp": {
+      "spx": {
+        "X3a_best_k": 1,
+        "X3a_best": 0.1673109714811173,
+        "X3b_best_k": 6,
+        "X3b_best": 0.34511862387203407
+      },
+      "y2": {
+        "X3a_best_k": 2,
+        "X3a_best": 0.1137942236525964,
+        "X3b_best_k": 6,
+        "X3b_best": 0.41873624417905897
+      },
+      "y1": {
+        "X3a_best_k": 1,
+        "X3a_best": 0.12276368440209151,
+        "X3b_best_k": 9,
+        "X3b_best": 0.2502596712395211
+      },
+      "y4": {
+        "X3a_best_k": 1,
+        "X3a_best": 0.06961110212860389,
+        "X3b_best_k": 5,
+        "X3b_best": 0.22112898273579984
+      }
+    },
+    "decomp_leg": {
+      "SPX": "X3b \u0394bill share",
+      "slope": "X3b \u0394bill share",
+      "10y": "X3b \u0394bill share",
+      "BTC": "X3b \u0394bill share"
+    },
+    "reason": "SPX X3=0.005 X2=-0.587 ok; slope X3=-0.603 X2=-2.784 fail",
+    "note": "Coefficients frozen on fit window; t7a_forward.csv is the holdout tape (no refit)."
   }
 }

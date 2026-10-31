@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0 — confirmatory OOS of T7a lags
+
+GO 2026-10-31. Frozen k from T7a 2021→ best lags (source=default): SPX=5, slope=6, 10y=9, BTC=5. Fit 2021-01→2023-12; test origins 2024-01→2026-04 (6m forwards end 2026-10). PASS if X3 OOS R² > X2 and > 0 for SPX and slope.
+
+Result: FAIL. SPX X3 OOS R² = 0.005 > X2 (−0.59) and > 0; slope X3 = −0.603 (not > 0). 10y and BTC also negative OOS R². Holdout tape `results/t7a_forward.csv`, coefficients not refit.
+
+Decomposition (exploratory): X3b Δbill share carries the 2021→ lag on all four targets; X3a Δlog(reserves/MOVE) does not.
+
+T1–T8 cut-offs untouched.
+
 ## 3.1 — T7a reported with X1/X2 lag controls
 
 No new cut-offs. T1–T8 constants untouched. Repeat 7a with X1 (Δrate) and X2 (Δlog reserves) lagged k=1..12 on the same targets and samples. CSV `results/t7a_controls.csv`. Four panels (SPX, slope, 10y, BTC) of partial R² by k for X1/X2/X3. Report table is exploratory: k=1 vs best k, X3 vs X2, 2021→ n≈64, overlapping 6m forwards. README scoreboard now includes T6–T8; BTC row marked lenient (X2 or X3), n=21.

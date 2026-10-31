@@ -90,6 +90,23 @@ def x_row(r, p, with_move: bool, with_bill: bool):
     return [x1, x2, x3]
 
 
+def x3_legs(r, p):
+    """X3a = 3m Δlog(reserves/MOVE); X3b = 3m Δbill share. None if missing."""
+    if r["reserves"] is None or p["reserves"] is None:
+        return None, None
+    if r["reserves"] <= 0 or p["reserves"] <= 0:
+        return None, None
+    x3a = None
+    if r["move"] and p["move"] and r["move"] > 0 and p["move"] > 0:
+        x3a = (math.log(r["reserves"]) - math.log(p["reserves"])) - (
+            math.log(r["move"]) - math.log(p["move"])
+        )
+    x3b = None
+    if r["bill_share"] is not None and p["bill_share"] is not None:
+        x3b = r["bill_share"] - p["bill_share"]
+    return x3a, x3b
+
+
 def targets_at(by, ym, fwd=T6_FWD):
     """6-month-forward targets from month ym. Yields in percentage points."""
     ymf = add_months(ym, fwd)

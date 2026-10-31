@@ -79,6 +79,17 @@ T8_EXCL_HI = "2021-12"       # source=default
 T8_DLAGS = 6                 # source=default
 T8_ROLL_STD_M = 12           # source=default
 
+# --- Round 4 (T7a confirmatory OOS). Frozen 2026-10-31 before GO. ---
+R4_K_SPX = 5                 # source=default  (T7a 2021→ best k)
+R4_K_SLOPE = 6               # source=default
+R4_K_10Y = 9                 # source=default
+R4_K_BTC = 5                 # source=default
+R4_FIT_LO = "2021-01"        # source=default
+R4_FIT_HI = "2023-12"        # source=default
+R4_TEST_LO = "2024-01"       # source=default
+R4_TEST_HI = "2026-10"       # source=default
+R4_FWD_END = "2026-04"       # source=default  (last origin with 6m forward in sample)
+
 LABELS = ("RATE", "QE_QT", "PLUMBING", "REGULATORY", "ADMIN", "OTHER")
 CLASSIFIER_CHECK_N = 50
 CLASSIFIER_MODEL = "glm-4.7-flash"

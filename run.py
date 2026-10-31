@@ -11,12 +11,13 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from constants import REPORT_DIR, RESULTS
-from src import test_t1, test_t2, test_t3, test_t4, test_t5, test_t6, test_t7, test_t8
+from src import test_t1, test_t2, test_t3, test_t4, test_t5, test_t6, test_t7, test_t8, test_r4
 
 
 def write_report(out: dict) -> None:
     t1, t2, t3, t4, t5 = out["T1"], out["T2"], out["T3"], out["T4"], out["T5"]
     t6, t7, t8 = out.get("T6") or {}, out.get("T7") or {}, out.get("T8") or {}
+    r4 = out.get("R4") or {}
     sh = t4.get("without_MOVE") or {}
     lines = []
     lines.append("# Testing the Third Monetary Regime")
@@ -120,6 +121,47 @@ def write_report(out: dict) -> None:
         if not any_flag:
             lines.append("No target has X3 > X2 at the best lag, so T7a does not reverse the round-2 T4 reading.")
             lines.append("")
+    if r4:
+        lines.append("## Round 4 — confirmatory OOS of T7a lags")
+        lines.append("")
+        lines.append(
+            f"source=default. Fit {r4.get('fit')}; test {r4.get('test')}. "
+            "Frozen k: SPX=5, slope=6, 10y=9, BTC=5. "
+            "PASS if X3 OOS R² > X2 OOS R² and > 0 for SPX and slope."
+        )
+        lines.append("")
+        lines.append(f"**{r4.get('verdict')}** — {r4.get('reason')}")
+        lines.append("")
+        lines.append("| Target | k | X1 OOS R² | X2 OOS R² | X3 OOS R² | n_fit | n_test |")
+        lines.append("|---|---|---|---|---|---|---|")
+        for ykey in ("spx", "y2", "y1", "y4"):
+            p = (r4.get("per") or {}).get(ykey) or {}
+            def g(xn):
+                v = (p.get(xn) or {}).get("oos_r2")
+                return "—" if v is None else f"{v:.3f}"
+            nf = (p.get("X3") or {}).get("n_fit")
+            nt = (p.get("X3") or {}).get("n_test")
+            lines.append(
+                f"| {p.get('label', ykey)} | {p.get('k')} | {g('X1')} | {g('X2')} | {g('X3')} | {nf} | {nt} |"
+            )
+        lines.append("")
+        lines.append("Holdout tape: `results/t7a_forward.csv` (frozen coefficients, no refit).")
+        lines.append("")
+        lines.append("Decomposition (exploratory, no cut-off) — which leg carries the 2021→ lag: X3a = Δlog(reserves/MOVE), X3b = Δbill share.")
+        lines.append("")
+        de = r4.get("decomp") or {}
+        legs = r4.get("decomp_leg") or {}
+        lines.append("| Target | X3a best k | X3a pr² | X3b best k | X3b pr² | carries |")
+        lines.append("|---|---|---|---|---|---|")
+        for ykey, lab in (("spx", "SPX"), ("y2", "slope"), ("y1", "10y"), ("y4", "BTC")):
+            d = de.get(ykey) or {}
+            def f(x):
+                return "—" if x is None else f"{x:.3f}"
+            lines.append(
+                f"| {lab} | {d.get('X3a_best_k')} | {f(d.get('X3a_best'))} | "
+                f"{d.get('X3b_best_k')} | {f(d.get('X3b_best'))} | {legs.get(lab, '')} |"
+            )
+        lines.append("")
     lines.append("## Key numbers")
     lines.append("")
     lines.append(json.dumps({k: {kk: vv for kk, vv in v.items() if not str(kk).startswith("_")} for k, v in out.items()}, indent=2, default=str))
@@ -138,7 +180,8 @@ def from_cache() -> dict:
     t6 = test_t6.run()
     t7 = test_t7.run()
     t8 = test_t8.run()
-    out = {"T1": t1, "T2": t2, "T3": t3, "T4": t4, "T5": t5, "T6": t6, "T7": t7, "T8": t8}
+    r4 = test_r4.run()
+    out = {"T1": t1, "T2": t2, "T3": t3, "T4": t4, "T5": t5, "T6": t6, "T7": t7, "T8": t8, "R4": r4}
     write_report(out)
     return out
 

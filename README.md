@@ -20,6 +20,8 @@ Filling the 2020–2026 FOMC hole and then splitting implementation notes (ADMIN
 
 Round 3 ran on 2026-10-31 with default cut-offs set before the run; the author had not specified predictions. Author-supplied values, if any, will be run once as Round 3b and reported alongside, not in place of, Round 3. T7a is reported as exploratory; it had no frozen criterion.
 
+Round 4 (confirmatory OOS of T7a lags, source=default, frozen before GO): fit 2021-01→2023-12, test origins 2024-01→2026-04, k_SPX=5, k_SLOPE=6, k_10Y=9, k_BTC=5. PASS if X3 OOS R² > X2 and > 0 for SPX and slope. Result: FAIL (SPX X3 0.005 > X2 and > 0; slope X3 −0.603 not > 0). Decomposition (exploratory): the 2021→ lag is carried by Δbill share (X3b), not Δlog(reserves/MOVE).
+
 Reproduce:
 
 ```
@@ -30,7 +32,7 @@ python run.py --fetch               # rebuilds data/ from public sources, ≈1 h
 
 Classification is optional. Labelled `data/actions.csv` is committed. To re-label, set `MODEL_CMD` in `constants.py` to any local or API command (prompt in `src/classify.py`).
 
-Pre-registration: `constants.py` was frozen before round 1. Round 2 changed instruments only (see CHANGELOG). Round 2.2 added FOMC statements 2020–2026. Round 2.3 classifies implementation notes as ADMIN unless the Desk directive records an operational change. Round 3 adds T6–T8 (source=default) without touching T1–T5 cut-offs. Round 3.1 reports T7a with X1/X2 lag controls; no new cut-offs. Thresholds were never tuned to results.
+Pre-registration: `constants.py` was frozen before round 1. Round 2 changed instruments only (see CHANGELOG). Round 2.2 added FOMC statements 2020–2026. Round 2.3 classifies implementation notes as ADMIN unless the Desk directive records an operational change. Round 3 adds T6–T8 (source=default) without touching T1–T5 cut-offs. Round 3.1 reports T7a with X1/X2 lag controls; no new cut-offs. Round 4 is a confirmatory OOS of those lags (source=default). Thresholds were never tuned to results.
 
 What would change the verdict: (1) a dealer-balance-sheet multiplier (NY Fed FR 2004) in place of 1/MOVE; (2) a Treasury-issuance event study for the corridor. Pull requests welcome; a PR that flips a verdict is the point.
 
