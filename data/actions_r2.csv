@@ -1,0 +1,296 @@
+date,source,title,href,label,confidence,rmp,rate,body_chars
+1997-03-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1997/19970325/,RATE,1.0,0,1,990
+1998-09-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1998/19980929/,RATE,1.0,0,1,762
+1998-10-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1998/19981015/,RATE,1.0,0,0,1002
+1998-11-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1998/19981117/,RATE,1.0,0,0,975
+1999-05-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19990518/,RATE,1.0,0,0,1125
+1999-06-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19990630/,RATE,1.0,0,1,1118
+1999-08-24,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19990824/,RATE,1.0,0,1,1466
+1999-10-05,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19991005/,RATE,1.0,0,1,1189
+1999-11-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19991116/,RATE,1.0,0,1,1619
+1999-12-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/1999/19991221/,RATE,1.0,0,0,1062
+2000-02-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20000202/,RATE,1.0,0,1,1342
+2000-03-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20000321/,RATE,1.0,0,1,1390
+2000-05-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20000516/,RATE,1.0,0,1,1330
+2000-06-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20000628/,RATE,1.0,0,1,1139
+2000-08-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20000822/,RATE,1.0,0,1,1144
+2000-10-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20001003/,RATE,1.0,0,1,1234
+2000-11-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20001115/,RATE,1.0,0,1,1261
+2000-12-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2000/20001219/,RATE,1.0,0,1,1095
+2001-01-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010103/,RATE,1.0,0,1,1525
+2001-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010131/,RATE,1.0,0,1,1767
+2001-03-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010320/,RATE,1.0,0,1,1620
+2001-04-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010418/,RATE,1.0,0,1,1956
+2001-05-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010515/,RATE,1.0,0,1,1774
+2001-06-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010627/,RATE,1.0,0,1,1395
+2001-08-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010821/,RATE,1.0,0,1,1345
+2001-09-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20010917/,RATE,1.0,0,1,1489
+2001-10-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20011002/,RATE,1.0,0,1,1210
+2001-11-06,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20011106/,RATE,1.0,0,1,1203
+2001-12-11,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2001/20011211/,RATE,1.0,0,1,1331
+2002-01-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2002/20020130/,RATE,1.0,0,1,955
+2002-03-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/general/2002/20020319/,RATE,1.0,0,1,1702
+2002-05-07,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20020507/,RATE,1.0,0,1,1224
+2002-06-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20020626/,RATE,1.0,0,1,1343
+2002-08-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20020813/,RATE,1.0,0,1,1218
+2002-09-24,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20020924/,RATE,1.0,0,1,1463
+2002-11-06,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20021106/,RATE,1.0,0,1,1724
+2002-12-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2002/20021210/,RATE,1.0,0,1,1186
+2003-01-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030129/default.htm,RATE,1.0,0,1,1173
+2003-03-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030318/default.htm,RATE,1.0,0,1,1601
+2003-05-06,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030506/default.htm,RATE,1.0,0,1,1494
+2003-06-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030625/default.htm,RATE,1.0,0,1,1954
+2003-08-12,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030812/default.htm,RATE,1.0,0,1,1444
+2003-09-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20030916/default.htm,RATE,1.0,0,1,1438
+2003-10-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20031028/default.htm,RATE,1.0,0,1,1438
+2003-12-09,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2003/20031209/default.htm,RATE,1.0,0,1,1353
+2004-01-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040128/default.htm,RATE,1.0,0,1,1372
+2004-03-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040316/default.htm,RATE,1.0,0,1,1343
+2004-05-04,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040504/default.htm,RATE,1.0,0,1,1351
+2004-06-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040630/default.htm,RATE,1.0,0,1,1874
+2004-08-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040810/default.htm,RATE,1.0,0,1,1994
+2004-09-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20040921/default.htm,RATE,1.0,0,1,1885
+2004-11-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20041110/default.htm,RATE,1.0,0,1,1748
+2004-12-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2004/20041214/default.htm,RATE,1.0,0,1,2117
+2005-02-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050202/default.htm,RATE,1.0,0,1,1794
+2005-03-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050322/default.htm,RATE,1.0,0,1,1971
+2005-05-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050503/default.htm,RATE,1.0,0,1,1948
+2005-06-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050630/default.htm,RATE,1.0,0,1,1828
+2005-08-09,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050809/default.htm,RATE,1.0,0,1,1895
+2005-09-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20050920/,RATE,1.0,0,1,2394
+2005-11-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20051101/,RATE,1.0,0,1,1926
+2005-12-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/boarddocs/press/monetary/2005/20051213/,RATE,1.0,0,1,1551
+2006-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060131a.htm,RATE,1.0,0,1,1403
+2006-03-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060328a.htm,RATE,1.0,0,1,1734
+2006-05-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060510a.htm,RATE,1.0,0,1,1849
+2006-06-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060629a.htm,RATE,1.0,0,1,1814
+2006-08-08,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060808a.htm,RATE,1.0,0,1,1378
+2006-09-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20060920a.htm,RATE,1.0,0,1,1323
+2006-10-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20061025a.htm,RATE,1.0,0,1,1340
+2006-12-12,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20061212a.htm,RATE,1.0,0,1,1413
+2007-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070131a.htm,RATE,1.0,0,1,1106
+2007-03-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070321a.htm,RATE,1.0,0,1,1052
+2007-05-09,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070509a.htm,RATE,1.0,0,1,1039
+2007-06-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070618a.htm,RATE,1.0,0,1,1134
+2007-08-07,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070807a.htm,RATE,1.0,0,1,1344
+2007-08-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070810a.htm,PLUMBING,1.0,0,0,689
+2007-08-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070817b.htm,PLUMBING,0.9,0,0,434
+2007-09-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20070918a.htm,RATE,1.0,0,1,1656
+2007-10-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20071031a.htm,RATE,1.0,0,1,1925
+2007-12-11,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20071211a.htm,RATE,1.0,0,1,1853
+2008-01-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080122b.htm,RATE,1.0,0,1,1620
+2008-01-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080130a.htm,RATE,1.0,0,1,1604
+2008-03-11,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080311a.htm,PLUMBING,1.0,0,0,2824
+2008-03-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080318a.htm,RATE,1.0,0,1,1895
+2008-04-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080430a.htm,RATE,1.0,0,1,2008
+2008-06-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080625a.htm,RATE,1.0,0,1,1634
+2008-08-05,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080805a.htm,RATE,1.0,0,1,1597
+2008-09-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20080916a.htm,RATE,1.0,0,1,1440
+2008-10-08,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20081008a.htm,RATE,1.0,0,1,1779
+2008-10-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20081029a.htm,RATE,1.0,0,1,1908
+2008-12-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20081216b.htm,QE_QT,1.0,0,1,2670
+2009-01-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090128a.htm,QE_QT,1.0,0,1,3158
+2009-03-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090318a.htm,QE_QT,1.0,0,1,1565
+2009-04-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090429a.htm,QE_QT,1.0,0,1,1415
+2009-06-24,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090624a.htm,QE_QT,1.0,0,1,1242
+2009-08-12,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090812a.htm,QE_QT,1.0,0,1,1497
+2009-09-23,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20090923a.htm,QE_QT,1.0,0,1,1432
+2009-11-04,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20091104a.htm,QE_QT,1.0,0,1,1682
+2009-12-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20091216a.htm,RATE,1.0,0,1,2424
+2010-01-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100127a.htm,RATE,1.0,0,1,2496
+2010-03-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100316a.htm,RATE,1.0,0,1,1904
+2010-04-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100428a.htm,RATE,1.0,0,1,1627
+2010-05-09,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100509a.htm,PLUMBING,1.0,0,0,1071
+2010-06-23,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100623a.htm,RATE,1.0,0,1,1183
+2010-08-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100810a.htm,QE_QT,1.0,0,1,1960
+2010-09-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20100921a.htm,RATE,1.0,0,1,2166
+2010-11-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20101103a.htm,QE_QT,1.0,0,1,1843
+2010-12-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/press/monetary/20101214a.htm,QE_QT,1.0,0,1,1740
+2011-01-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110126a.htm,RATE,1.0,0,1,1138
+2011-03-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110315a.htm,QE_QT,1.0,0,1,1875
+2011-04-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110427a.htm,QE_QT,1.0,0,1,1852
+2011-06-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110622a.htm,QE_QT,1.0,0,0,1049
+2011-08-09,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110809a.htm,RATE,1.0,0,1,2197
+2011-09-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20110921a.htm,QE_QT,1.0,0,1,3084
+2011-11-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20111102a.htm,QE_QT,1.0,0,1,2314
+2011-12-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20111213a.htm,QE_QT,1.0,0,1,2216
+2012-01-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120125a.htm,QE_QT,1.0,0,1,2144
+2012-03-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120313a.htm,QE_QT,1.0,0,1,2219
+2012-04-25,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120425a.htm,QE_QT,1.0,0,1,2261
+2012-06-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120620a.htm,QE_QT,1.0,0,1,2644
+2012-08-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120801a.htm,QE_QT,1.0,0,1,2245
+2012-09-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20120913a.htm,QE_QT,1.0,0,1,3061
+2012-10-24,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20121024a.htm,QE_QT,1.0,0,1,3002
+2012-12-12,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20121212a.htm,QE_QT,1.0,0,1,3893
+2013-01-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130130a.htm,QE_QT,0.9,0,1,3636
+2013-03-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130320a.htm,QE_QT,1.0,0,1,3604
+2013-05-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130501a.htm,QE_QT,1.0,0,1,3781
+2013-06-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130619a.htm,QE_QT,1.0,0,1,3989
+2013-07-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130731a.htm,QE_QT,1.0,0,1,3954
+2013-09-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm,QE_QT,1.0,0,1,4612
+2013-10-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20131030a.htm,QE_QT,1.0,0,1,4468
+2013-12-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20131218a.htm,QE_QT,1.0,0,1,5187
+2014-01-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140129a.htm,QE_QT,1.0,0,1,4939
+2014-03-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140319a.htm,QE_QT,1.0,0,1,5271
+2014-04-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140430a.htm,QE_QT,1.0,0,1,4757
+2014-06-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140618a.htm,QE_QT,1.0,0,1,4775
+2014-07-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140730a.htm,QE_QT,1.0,0,1,5062
+2014-09-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20140917a.htm,QE_QT,1.0,0,1,5328
+2014-10-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20141029a.htm,QE_QT,1.0,0,1,4201
+2014-12-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20141217a.htm,QE_QT,1.0,0,1,4155
+2015-01-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150128a.htm,QE_QT,1.0,0,1,2975
+2015-03-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150318a.htm,QE_QT,1.0,0,1,3035
+2015-04-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150429a.htm,QE_QT,1.0,0,1,2485
+2015-06-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150617a.htm,QE_QT,1.0,0,1,2727
+2015-07-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150729a.htm,QE_QT,1.0,0,1,2732
+2015-09-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20150917a.htm,QE_QT,1.0,0,1,2660
+2015-10-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20151028a.htm,QE_QT,1.0,0,1,2955
+2015-12-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20151216a.htm,QE_QT,1.0,0,1,3018
+2016-01-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160127a.htm,QE_QT,1.0,0,1,2774
+2016-03-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160316a.htm,QE_QT,1.0,0,1,2846
+2016-04-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160427a.htm,QE_QT,1.0,0,1,2815
+2016-06-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160615a.htm,QE_QT,1.0,0,1,2671
+2016-07-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160727a.htm,QE_QT,1.0,0,1,2864
+2016-09-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20160921a.htm,QE_QT,1.0,0,1,3100
+2016-11-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20161102a.htm,QE_QT,1.0,0,1,3023
+2016-12-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20161214a.htm,QE_QT,1.0,0,1,2710
+2017-02-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170201a.htm,QE_QT,1.0,0,1,2580
+2017-03-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170315a.htm,QE_QT,1.0,0,1,2679
+2017-05-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170503a.htm,QE_QT,1.0,0,1,2630
+2017-06-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170614a.htm,QE_QT,1.0,0,1,2902
+2017-07-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170726a.htm,QE_QT,1.0,0,1,2650
+2017-09-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20170920a.htm,RATE,1.0,0,1,944
+2017-11-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20171101a.htm,RATE,1.0,0,1,847
+2017-12-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20171213a.htm,RATE,1.0,0,1,896
+2018-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180131a.htm,RATE,1.0,0,1,2055
+2018-03-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180321a.htm,RATE,1.0,0,1,2062
+2018-05-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180502a.htm,RATE,1.0,0,1,1958
+2018-06-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180613a.htm,RATE,1.0,0,1,1424
+2018-08-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180801a.htm,RATE,1.0,0,1,1428
+2018-09-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20180926a.htm,RATE,1.0,0,1,1299
+2018-11-08,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20181108a.htm,RATE,1.0,0,1,1296
+2018-12-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20181219a.htm,RATE,1.0,0,1,1473
+2019-01-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190130a.htm,RATE,1.0,0,0,1253
+2019-03-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190320a.htm,RATE,1.0,0,0,1251
+2019-05-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190501a.htm,RATE,1.0,0,0,1242
+2019-06-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190619a.htm,RATE,1.0,0,1,1473
+2019-07-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190731a.htm,QE_QT,1.0,0,1,603
+2019-09-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20190918a.htm,RATE,1.0,0,1,2671
+2019-10-11,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20191011a.htm,PLUMBING,1.0,1,1,3313
+2019-10-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20191030a.htm,RATE,1.0,0,1,1106
+2019-12-11,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20191211a.htm,RATE,1.0,0,1,1378
+2020-01-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200129a.htm,RATE,1.0,0,1,1383
+2020-03-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200303a.htm,RATE,1.0,0,0,491
+2020-03-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a.htm,QE_QT,1.0,0,1,3269
+2020-03-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200319b.htm,PLUMBING,1.0,0,0,1581
+2020-03-23,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200323a.htm,QE_QT,1.0,0,1,3929
+2020-03-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200331a.htm,PLUMBING,1.0,0,0,1838
+2020-04-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200429a.htm,QE_QT,1.0,0,1,1825
+2020-06-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200610a.htm,QE_QT,1.0,0,1,1849
+2020-07-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200729a.htm,QE_QT,1.0,0,1,1849
+2020-08-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200827a.htm,OTHER,0.0,0,0,2070
+2020-09-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20200916a.htm,QE_QT,1.0,0,1,2607
+2020-11-05,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20201105a.htm,QE_QT,1.0,0,1,2093
+2020-12-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20201216a.htm,QE_QT,1.0,0,1,2204
+2021-01-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210127a.htm,QE_QT,1.0,0,1,2227
+2021-01-27,Fed_FOMC,Implementation Note issued 2021-01-27,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210127a1.htm,PLUMBING,1.0,0,1,3433
+2021-01-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210127b.htm,OTHER,1.0,0,0,574
+2021-03-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210317a.htm,QE_QT,1.0,0,1,2225
+2021-03-17,Fed_FOMC,Implementation Note issued 2021-03-17,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210317a1.htm,PLUMBING,1.0,0,1,3526
+2021-04-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210428a.htm,QE_QT,1.0,0,1,2225
+2021-04-28,Fed_FOMC,Implementation Note issued 2021-04-28,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210428a1.htm,PLUMBING,1.0,0,1,3365
+2021-06-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210616a.htm,QE_QT,1.0,0,1,2227
+2021-06-16,Fed_FOMC,Implementation Note issued 2021-06-16,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210616a1.htm,PLUMBING,1.0,0,1,3705
+2021-07-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210728a.htm,QE_QT,1.0,0,1,2363
+2021-07-28,Fed_FOMC,Implementation Note issued 2021-07-28,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210728a1.htm,PLUMBING,1.0,0,1,3875
+2021-09-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210922a.htm,QE_QT,1.0,0,1,2433
+2021-09-22,Fed_FOMC,Implementation Note issued 2021-09-22,https://www.federalreserve.gov/newsevents/pressreleases/monetary20210922a1.htm,PLUMBING,1.0,0,1,3530
+2021-11-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20211103a.htm,QE_QT,1.0,0,1,2876
+2021-11-03,Fed_FOMC,Implementation Note issued 2021-11-03,https://www.federalreserve.gov/newsevents/pressreleases/monetary20211103a1.htm,PLUMBING,1.0,0,1,3916
+2021-12-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20211215a.htm,QE_QT,1.0,0,1,2246
+2021-12-15,Fed_FOMC,Implementation Note issued 2021-12-15,https://www.federalreserve.gov/newsevents/pressreleases/monetary20211215a1.htm,PLUMBING,1.0,0,1,3711
+2022-01-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm,QE_QT,1.0,0,1,1842
+2022-01-26,Fed_FOMC,Implementation Note issued 2022-01-26,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a1.htm,PLUMBING,1.0,0,1,3707
+2022-01-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126b.htm,OTHER,1.0,0,0,499
+2022-01-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126c.htm,QE_QT,1.0,0,0,1547
+2022-03-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm,RATE,1.0,0,1,1696
+2022-03-16,Fed_FOMC,Implementation Note issued 2022-03-16,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a1.htm,PLUMBING,1.0,0,1,3331
+2022-05-04,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm,RATE,1.0,0,1,1801
+2022-05-04,Fed_FOMC,Implementation Note issued 2022-05-04,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a1.htm,PLUMBING,1.0,0,1,3817
+2022-05-04,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504b.htm,QE_QT,1.0,0,0,1910
+2022-06-15,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm,RATE,1.0,0,1,1809
+2022-06-15,Fed_FOMC,Implementation Note issued 2022-06-15,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a1.htm,PLUMBING,1.0,0,1,3591
+2022-07-27,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a.htm,RATE,1.0,0,1,1594
+2022-07-27,Fed_FOMC,Implementation Note issued 2022-07-27,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a1.htm,PLUMBING,1.0,0,1,4308
+2022-09-21,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a.htm,RATE,1.0,0,1,1595
+2022-09-21,Fed_FOMC,Implementation Note issued 2022-09-21,https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a1.htm,PLUMBING,1.0,0,1,3653
+2022-11-02,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a.htm,RATE,1.0,0,1,2067
+2022-11-02,Fed_FOMC,Implementation Note issued 2022-11-02,https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a1.htm,PLUMBING,1.0,0,1,3639
+2022-12-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm,RATE,1.0,0,1,2072
+2022-12-14,Fed_FOMC,Implementation Note issued 2022-12-14,https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a1.htm,PLUMBING,1.0,0,1,3687
+2023-02-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a.htm,RATE,1.0,0,1,1991
+2023-02-01,Fed_FOMC,Implementation Note issued 2023-02-01,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a1.htm,PLUMBING,1.0,0,1,3654
+2023-02-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201b.htm,OTHER,1.0,0,0,576
+2023-03-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm,RATE,1.0,0,1,2072
+2023-03-22,Fed_FOMC,Implementation Note issued 2023-03-22,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a1.htm,PLUMBING,1.0,0,1,3449
+2023-05-03,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm,RATE,1.0,0,1,1921
+2023-05-03,Fed_FOMC,Implementation Note issued 2023-05-03,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a1.htm,PLUMBING,1.0,0,1,3480
+2023-06-14,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a.htm,RATE,1.0,0,1,1964
+2023-06-14,Fed_FOMC,Implementation Note issued 2023-06-14,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a1.htm,PLUMBING,1.0,0,1,3205
+2023-07-26,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a.htm,RATE,1.0,0,1,1924
+2023-07-26,Fed_FOMC,Implementation Note issued 2023-07-26,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a1.htm,PLUMBING,1.0,0,1,3478
+2023-09-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a.htm,RATE,1.0,0,1,1951
+2023-09-20,Fed_FOMC,Implementation Note issued 2023-09-20,https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a1.htm,PLUMBING,1.0,0,1,3220
+2023-11-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a.htm,RATE,1.0,0,1,1949
+2023-11-01,Fed_FOMC,Implementation Note issued 2023-11-01,https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a1.htm,PLUMBING,1.0,0,1,3215
+2023-12-13,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a.htm,RATE,1.0,0,1,1954
+2023-12-13,Fed_FOMC,Implementation Note issued 2023-12-13,https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a1.htm,PLUMBING,1.0,0,1,3217
+2024-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a.htm,RATE,1.0,0,1,2030
+2024-01-31,Fed_FOMC,Implementation Note issued 2024-01-31,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a1.htm,PLUMBING,1.0,0,1,3214
+2024-01-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131b.htm,OTHER,1.0,0,0,567
+2024-03-20,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a.htm,RATE,1.0,0,1,2028
+2024-03-20,Fed_FOMC,Implementation Note issued 2024-03-20,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a1.htm,PLUMBING,1.0,0,1,3208
+2024-05-01,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a.htm,RATE,1.0,0,1,2395
+2024-05-01,Fed_FOMC,Implementation Note issued 2024-05-01,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a1.htm,PLUMBING,1.0,0,1,3842
+2024-06-12,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a.htm,RATE,1.0,0,1,2000
+2024-06-12,Fed_FOMC,Implementation Note issued 2024-06-12,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a1.htm,PLUMBING,1.0,0,1,3291
+2024-07-31,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm,RATE,1.0,0,1,2067
+2024-07-31,Fed_FOMC,Implementation Note issued 2024-07-31,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a1.htm,PLUMBING,1.0,0,1,3293
+2024-09-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm,RATE,1.0,0,1,2128
+2024-09-18,Fed_FOMC,Implementation Note issued 2024-09-18,https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a1.htm,PLUMBING,1.0,0,1,3467
+2024-11-07,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm,RATE,1.0,0,1,1863
+2024-11-07,Fed_FOMC,Implementation Note issued 2024-11-07,https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a1.htm,PLUMBING,1.0,0,1,3576
+2024-12-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm,RATE,1.0,0,1,2016
+2024-12-18,Fed_FOMC,Implementation Note issued 2024-12-18,https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a1.htm,PLUMBING,1.0,0,1,3756
+2025-01-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250129a.htm,RATE,1.0,0,1,1876
+2025-01-29,Fed_FOMC,Implementation Note issued 2025-01-29,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250129a1.htm,PLUMBING,1.0,0,1,3301
+2025-03-19,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250319a.htm,RATE,1.0,0,1,2259
+2025-03-19,Fed_FOMC,Implementation Note issued 2025-03-19,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250319a1.htm,PLUMBING,1.0,0,1,3508
+2025-05-07,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250507a.htm,RATE,1.0,0,1,1923
+2025-05-07,Fed_FOMC,Implementation Note issued 2025-05-07,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250507a1.htm,PLUMBING,1.0,0,1,3147
+2025-06-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm,RATE,1.0,0,1,1802
+2025-06-18,Fed_FOMC,Implementation Note issued 2025-06-18,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a1.htm,PLUMBING,1.0,0,1,3152
+2025-07-30,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250730a.htm,RATE,1.0,0,1,1952
+2025-07-30,Fed_FOMC,Implementation Note issued 2025-07-30,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250730a1.htm,PLUMBING,1.0,0,1,3152
+2025-08-22,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250822a.htm,OTHER,1.0,0,0,1293
+2025-09-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm,RATE,1.0,0,1,2024
+2025-09-17,Fed_FOMC,Implementation Note issued 2025-09-17,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a1.htm,PLUMBING,1.0,0,1,3414
+2025-10-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm,QE_QT,1.0,0,1,2098
+2025-10-29,Fed_FOMC,Implementation Note issued 2025-10-29,https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a1.htm,PLUMBING,1.0,0,1,3789
+2025-12-10,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm,PLUMBING,1.0,1,1,2239
+2025-12-10,Fed_FOMC,Implementation Note issued 2025-12-10,https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a1.htm,PLUMBING,1.0,1,1,3133
+2026-01-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm,RATE,1.0,0,1,1785
+2026-01-28,Fed_FOMC,Implementation Note issued 2026-01-28,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a1.htm,PLUMBING,1.0,1,1,2780
+2026-01-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128b.htm,OTHER,1.0,0,0,564
+2026-03-18,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm,RATE,1.0,0,1,1867
+2026-03-18,Fed_FOMC,Implementation Note issued 2026-03-18,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a1.htm,PLUMBING,1.0,1,1,2774
+2026-04-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm,RATE,1.0,0,1,1988
+2026-04-29,Fed_FOMC,Implementation Note issued 2026-04-29,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm,PLUMBING,1.0,1,1,2774
+2026-06-17,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm,RATE,1.0,0,1,952
+2026-06-17,Fed_FOMC,Implementation Note issued 2026-06-17,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a1.htm,PLUMBING,1.0,1,1,2789
+2026-07-29,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm,RATE,1.0,0,1,1161
+2026-07-29,Fed_FOMC,Implementation Note issued 2026-07-29,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a1.htm,PLUMBING,1.0,1,1,2789
+2026-09-16,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm,RATE,1.0,0,1,963
+2026-09-16,Fed_FOMC,Implementation Note issued 2026-09-16,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm,PLUMBING,1.0,1,1,3037
+2026-10-28,Fed_FOMC,Federal Reserve issues FOMC statement,https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm,RATE,1.0,0,1,1217
+2026-10-28,Fed_FOMC,Implementation Note issued 2026-10-28,https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm,PLUMBING,1.0,1,1,2793

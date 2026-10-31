@@ -1,0 +1,25 @@
+{
+  "round": "2.2",
+  "n_actions": 298,
+  "n_new_classified": 103,
+  "minutes_as_actions": 0,
+  "plumbing_fed_nyfed_rows": 10,
+  "plumbing_episodes_gap60": 6,
+  "plumbing_episodes_gap30": 6,
+  "treasury_buyback_rows": 2,
+  "first_treasury_follows_breach_year": 2026,
+  "t3_plumbing_share": {
+    "R1": 0.081,
+    "R2": 0.0,
+    "R3": 0.097
+  },
+  "t3_n_actions_used": 161,
+  "t3_r3_no_power": true,
+  "gates": {
+    "2020-03-15": "PASS QE_QT (pre-existing statement)",
+    "2022-05-04": "PASS QE_QT + rate=1",
+    "2025-10-29": "PASS QE_QT + rate=1",
+    "2025-12-10": "PASS PLUMBING rmp=1 + rate=1"
+  },
+  "nyfed_2019_09_17": "https://www.newyorkfed.org/markets/opolicy/operating_policy_190917"
+}

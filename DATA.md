@@ -6,7 +6,9 @@
 | SOFR, EFFR, p99, target | NY Fed markets API `search.json` 500-day windows | 2018-04-02 | daily | IORB = target_to − 0.10 | `src/fetch_fed.py` |
 | Funding-stress proxy | H.15 then NY Fed | 1990-01 | daily | pre-2018 EFFR−3m bill (bp, 2y z); 2018→ SOFR−IORB | `src/fetch_fed.py` |
 | S&P, MOVE, VIX, DXY, HYG, LQD | Yahoo chart API | see file | weekly + monthly | last close of week / month | `src/fetch_market.py` |
-| FOMC statements | federalreserve.gov `fomchistorical{YYYY}.htm` → statement URL | 1997 | event | labels in `actions.csv` | `src/classify.py` |
+| FOMC statements 1997–2020 | federalreserve.gov `fomchistorical{YYYY}.htm` → statement URL | 1997 | event | labels in `actions.csv`; no bodies | `src/classify.py` |
+| FOMC statements + implementation notes 2020–2026 | https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm → monetaryYYYYMMDDa.htm / a1.htm | 2020-01-29 | event | labels only; refresh by re-walking the calendar page | `src/classify.py` |
+| NY Fed desk 2019-09-17 | https://www.newyorkfed.org/markets/opolicy/operating_policy_190917 | 2019-09-17 | event | PLUMBING | — |
 | CPI y/y | BLS public API v2 series CUUR0000SA0 | 1990 | annual | December y/y (else last month) | `src/fetch_fed.py` |
 
 Yahoo-derived series: derived weekly/monthly aggregates; raw daily not redistributed; rebuild with `--fetch`.

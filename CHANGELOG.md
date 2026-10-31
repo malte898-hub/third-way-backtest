@@ -1,11 +1,38 @@
 # Changelog
 
+## 2.1 — correction
+
+Oct–Nov 2025: reserve drain → QT ended 2025-12-01 and reserve-management bill purchases began 2025-12-12, announced at the 2025-10-29 and 2025-12-10 FOMC meetings alongside two 25 bp cuts. First STRESS print 2025-10-15; first plumbing announcement 2025-10-29 (10 sessions). No T1–T5 numbers changed in 2.1.
+
+## 2.2 — FOMC statements 2020–2026 added; T2/T3 rerun; what moved
+
+Hole: fomchistorical{YYYY}.htm exists only for years with released transcripts (five-year lag). Labelled FOMC statements after 2019-12-11 were missing from the public action table (a few 2020 historical statements were present; 2021–2026 were not). No 2022-05-04 QT plan, no 2025-10-29 QT end, no 2025-12-10 RMP.
+
+Fix: harvest fomccalendars.htm Statement + Implementation Note links. Same prompt and model on bodies. Gates: 2020-03-15 QE_QT; 2022-05-04 QE_QT; 2025-10-29 QE_QT+RATE; 2025-12-10 PLUMBING rmp=1+RATE — all PASS. Added NY Fed 2019-09-17 desk repo as source=NYFed PLUMBING. Treasury 2026-08-01 buyback XML/PDF source=Treasury (n=2), excluded from Fed PLUMBING counts. Pre-2020 minutes as actions: 0.
+
+Moved (T2/T3 only; T1/T4/T5 not rerun; thresholds frozen):
+
+| | Round 2 | Round 2.2 |
+|---|---|---|
+| actions n | 192 | 298 |
+| T2 plumbing n | 80 | 80 |
+| T2 plumbing FIRST_MOVER | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN |
+| T2 plumbing RESOLVER | RATE / QE_QT / PLUMBING | RATE / QE_QT / PLUMBING+RATE |
+| T2 equity RESOLVER | RATE / QE_QT / RATE | RATE / QE_QT / PLUMBING+RATE |
+| T3 R1 | 5.64× p=0.001 | 5.64× p=0.001 |
+| T3 R2 | 0.74× p=1.00 | 0.74× p=1.00 |
+| T3 R3 | 1.19× p=0.054 | 1.13× p=0.001; Puncond=0.62 no_power |
+| PLUMBING Fed+NYFed rows / 60d episodes / 30d | — | 56 / 6 / 52 |
+| first Treasury-follows-breach year | 2026 | 2026 |
+
+R3 modal resolver is a RATE/PLUMBING tie (implementation notes + cuts). Frozen PASS/FAIL still FAIL on T2 (FIRST_MOVER) and T3 (ratio < 1.5 and R3 < R1).
+
 ## Round 2 (instruments only; thresholds frozen)
 
-- T1: same fail; added CPI y/y 2×2 (rival: positive worst-week Δ10y only in high-CPI years) and April 2025 week exhibit. Rival false; 2024 is a low-CPI positive year.
-- T2: FOMC *bodies* (not titles) labelled; QE_QT appears. Plumbing-defined episodes (MOVE z, funding z, SOFR p99>SRF) added. RESOLVER now RATE → QE_QT → PLUMBING. FIRST_MOVER still not the predicted sequence.
-- T3: action set = PLUMBING + QE_QT + RATE off the FOMC statement calendar. Restores R1 power (ratio 5.6). R3 still 1.19, p=0.054.
-- T4: X3 without MOVE (reserves + bill share) so the sample starts 1990 and X1 is observable. X1 takes a majority of pre-2008 windows. X3 still does not take 2021→.
-- T5: 50 twelve-month block-shuffles; RSS-reduction hierarchy. 2008-ish and 2020 found; a third break remains; first split is not larger than placebo.
+- T1: same fail; added CPI y/y 2×2 and April 2025 week exhibit.
+- T2: FOMC bodies labelled; plumbing-defined episodes added. RESOLVER RATE → QE_QT → PLUMBING on that incomplete feed.
+- T3: action set = PLUMBING + QE_QT + RATE off the FOMC statement calendar. R1 5.6×; R3 1.19, p=0.054.
+- T4: X3 without MOVE so the sample starts 1990.
+- T5: 50 twelve-month block-shuffles.
 
-Round 1 used press titles (2016+ year pages only; 1996–2015 404), so QE_QT count was zero and scheduled FOMC RATE statements emptied R1's corridor test.
+Round 1 used press titles (2016+ year pages only), so QE_QT count was zero.

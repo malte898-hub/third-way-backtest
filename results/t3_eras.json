@@ -26,10 +26,10 @@
     "n_breach": 495,
     "date_min": "2019-09-03",
     "date_max": "2026-10-30",
-    "P_action_given_breach": 0.11515151515151516,
-    "P_uncond": 0.09686450167973125,
-    "ratio": 1.1887896304081276,
-    "p_value": 0.053946053946053944,
-    "no_power": false
+    "P_action_given_breach": 0.6989898989898989,
+    "P_uncond": 0.620380739081747,
+    "ratio": 1.1267111548699995,
+    "p_value": 0.000999000999000999,
+    "no_power": true
   }
 }
