@@ -27,6 +27,25 @@ Moved (T2/T3 only; T1/T4/T5 not rerun; thresholds frozen):
 
 R3 modal resolver is a RATE/PLUMBING tie (implementation notes + cuts). Frozen PASS/FAIL still FAIL on T2 (FIRST_MOVER) and T3 (ratio < 1.5 and R3 < R1).
 
+## 2.3 — implementation notes classified ADMIN; T2/T3 rerun; thresholds unchanged
+
+Implementation notes (`a1.htm`) default to ADMIN. Promote only when the Desk directive’s ops skeleton changes vs the previous note (regex on purchase / reinvest / cap / counterparty limit / standing repo / swap line; IORB/RRP/primary-credit resets that follow the target range stay ADMIN). Statements keep 2.2 labels. ADMIN is excluded from T2 resolvers and the T3 action set.
+
+Gates: 2025-12-10 note PLUMBING rmp=1; 2022-05-04 note QE_QT; 2021-07-28 note PLUMBING; 2023 notes that only reset IORB → ADMIN. Rule in `src/classify.py`.
+
+| | Round 2 | Round 2.2 | Round 2.3 |
+|---|---|---|---|
+| T2 plumbing n | 80 | 80 | 80 |
+| T2 plumbing FIRST_MOVER | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN |
+| T2 plumbing RESOLVER | RATE / QE_QT / PLUMBING | RATE / QE_QT / PLUMBING+RATE | RATE / QE_QT / RATE |
+| T3 n_actions | 78 | 138 | 104 |
+| T3 R1 | 5.64× p=0.001 | 5.64× p=0.001 | 5.64× p=0.001 Puncond=0.010 |
+| T3 R2 | 0.74× p=1.00 | 0.74× p=1.00 | 0.74× p=1.00 Puncond=0.471 |
+| T3 R3 | 1.19× p=0.054 | 1.13× p=0.001; Puncond=0.62 no_power | 1.14× p=0.005 Puncond=0.312 |
+| PLUMBING rows / 60d / 30d | — | 56 / 6 / 52 | 12 / 9 / 9 |
+
+Frozen criteria: T2 FAIL (FIRST_MOVER). T3 FAIL (R3 1.14 < 1.5 and < R1). R3 has power again (Puncond 0.31 < 0.5). T1/T4/T5 not rerun. T2 equity-def not rerun (press feed has no implementation notes).
+
 ## Round 2 (instruments only; thresholds frozen)
 
 - T1: same fail; added CPI y/y 2×2 and April 2025 week exhibit.

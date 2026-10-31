@@ -2,31 +2,32 @@
 
 Independent research. Not investment advice. No positions implied.
 
-## Scoreboard (round 2.2)
+## Scoreboard (round 2.3)
 
 | Test | Frozen criterion | Result | Reason |
 |---|---|---|---|
 | T1 haven inversion | ≥80% of 1990–2018 worst-week mean Δ10y < 0; ≥60% of 2020–2026 > 0; corr sign-flip 2018–21 | FAIL | neg-share 62.1% (need 80%); pos-share 57.1% (need 60%); flip 2019-07-29 |
-| T2 plumbing episodes | FIRST_MOVER RATE_EXP→VOL/FUN; RESOLVER RATE→QE_QT→PLUMBING | FAIL | FM {'R1': 'FUN', 'R2': 'RATE_EXP', 'R3': 'FUN'}; RES {'R1': 'RATE', 'R2': 'QE_QT', 'R3': 'PLUMBING+RATE'}; n=80 plumbing-defined episodes |
-| T3 corridor | R3 ratio > 1.5, p<0.05, R3>R1 | FAIL | R1 ratio=5.64 p=0.001; R2 ratio=0.74 p=1.000; R3 ratio=1.13 p=0.001 Puncond=0.620 no_power |
+| T2 plumbing episodes | FIRST_MOVER RATE_EXP→VOL/FUN; RESOLVER RATE→QE_QT→PLUMBING | FAIL | FM {'R1': 'FUN', 'R2': 'RATE_EXP', 'R3': 'FUN'}; RES {'R1': 'RATE', 'R2': 'QE_QT', 'R3': 'RATE'}; n=80 plumbing-defined episodes |
+| T3 corridor | R3 ratio > 1.5, p<0.05, R3>R1 | FAIL | R1 ratio=5.64 p=0.001 Puncond=0.010; R2 ratio=0.74 p=1.000 Puncond=0.471; R3 ratio=1.14 p=0.005 Puncond=0.312 |
 | T4 horse race | X1 / X2 / X3 majority in R1 / R2 / R3 windows | UNPROVEN | no-MOVE X1=52.5% n=61; X2=50.0%; X3=1.6% |
 | T5 breaks | 2008 and 2019–20 ±18m, not elsewhere | FAIL | breaks ['2020-02', '2007-07', '2012-07']; extra=['2012-07']; placebo p=0.73 |
 
-## Round 2 vs 2.2 (T1/T4/T5 not rerun)
+## Round 2 vs 2.2 vs 2.3 (T1/T4/T5 not rerun)
 
-| Test | Round 2 | Round 2.2 |
-|---|---|---|
-| T1 | FAIL 62% / 57%; flip 2019-07-29 | unchanged |
-| T2 plumbing FM | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN (unchanged) |
-| T2 plumbing RES | RATE / QE_QT / PLUMBING | RATE / QE_QT / PLUMBING+RATE |
-| T2 equity RES | RATE / QE_QT / RATE | RATE / QE_QT / PLUMBING+RATE |
-| T3 R1 | 5.64× p=0.001 | 5.64× p=0.001 |
-| T3 R2 | 0.74× p=1.00 | 0.74× p=1.00 |
-| T3 R3 | 1.19× p=0.054 | 1.13× p=0.001; Puncond=0.62 no_power |
-| T3 plumbing share of post-breach actions R3 | (not separately published) | 9.7% |
-| first Treasury-follows-breach year | 2026 | 2026 |
-| T4 | UNPROVEN X1 52.5% / X2 50% / X3 1.6% | unchanged |
-| T5 | FAIL 2020-02, 2007-07, 2012-07; placebo p≈0.73 | unchanged |
+| Test | Round 2 | Round 2.2 | Round 2.3 |
+|---|---|---|---|
+| T1 | FAIL 62% / 57%; flip 2019-07-29 | unchanged | unchanged |
+| T2 plumbing n | 80 | 80 | 80 |
+| T2 plumbing FM | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN | FUN / RATE_EXP / FUN |
+| T2 plumbing RES | RATE / QE_QT / PLUMBING | RATE / QE_QT / PLUMBING+RATE | RATE / QE_QT / RATE |
+| T2 equity RES | RATE / QE_QT / RATE | RATE / QE_QT / PLUMBING+RATE | not rerun (press feed has no notes) |
+| T3 n_actions | 78 | 138 | 104 |
+| T3 R1 | 5.64× p=0.001 | 5.64× p=0.001 | 5.64× p=0.001 Puncond=0.010 |
+| T3 R2 | 0.74× p=1.00 | 0.74× p=1.00 | 0.74× p=1.00 Puncond=0.471 |
+| T3 R3 | 1.19× p=0.054 | 1.13× p=0.001; Puncond=0.62 no_power | 1.14× p=0.005 Puncond=0.312 |
+| PLUMBING rows / 60d / 30d | — | 56 / 6 / 52 | 12 / 9 / 9 |
+| T4 | UNPROVEN X1 52.5% / X2 50% / X3 1.6% | unchanged | unchanged |
+| T5 | FAIL 2020-02, 2007-07, 2012-07; placebo p≈0.73 | unchanged | unchanged |
 
 ## 2025 vignette (2.1 correction)
 
@@ -62,10 +63,10 @@ The 2025-10-29 statement gives no money-market attribution; press-conference rem
     "modal_RESOLVER": {
       "R1": "RATE",
       "R2": "QE_QT",
-      "R3": "PLUMBING+RATE"
+      "R3": "RATE"
     },
     "criterion": "modal FIRST_MOVER RATE_EXP \u2192 any \u2192 VOL/FUN; RESOLVER RATE \u2192 QE_QT \u2192 PLUMBING",
-    "reason": "FM {'R1': 'FUN', 'R2': 'RATE_EXP', 'R3': 'FUN'}; RES {'R1': 'RATE', 'R2': 'QE_QT', 'R3': 'PLUMBING+RATE'}; n=80 plumbing-defined episodes"
+    "reason": "FM {'R1': 'FUN', 'R2': 'RATE_EXP', 'R3': 'FUN'}; RES {'R1': 'RATE', 'R2': 'QE_QT', 'R3': 'RATE'}; n=80 plumbing-defined episodes"
   },
   "T3": {
     "verdict": "FAIL",
@@ -97,15 +98,15 @@ The 2025-10-29 statement gives no money-market attribution; press-conference rem
         "n_breach": 495,
         "date_min": "2019-09-03",
         "date_max": "2026-10-30",
-        "P_action_given_breach": 0.6989898989898989,
-        "P_uncond": 0.620380739081747,
-        "ratio": 1.1267111548699995,
-        "p_value": 0.000999000999000999,
-        "no_power": true
+        "P_action_given_breach": 0.35555555555555557,
+        "P_uncond": 0.3124300111982083,
+        "ratio": 1.1380326563122263,
+        "p_value": 0.004995004995004995,
+        "no_power": false
       }
     },
-    "criterion": "R3 P(action|breach)/P_uncond > 1.5 with p<0.05 and R3 ratio > R1",
-    "reason": "R1 ratio=5.64 p=0.001; R2 ratio=0.74 p=1.000; R3 ratio=1.13 p=0.001 Puncond=0.620 no_power"
+    "criterion": "R3 P(action|breach)/P_uncond > 1.5 with p<0.05 and R3 ratio > R1; no ratio if Puncond>0.5",
+    "reason": "R1 ratio=5.64 p=0.001 Puncond=0.010; R2 ratio=0.74 p=1.000 Puncond=0.471; R3 ratio=1.14 p=0.005 Puncond=0.312"
   },
   "T4": {
     "verdict": "UNPROVEN",

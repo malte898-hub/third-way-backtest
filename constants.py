@@ -55,7 +55,7 @@ CPI_CUT = 3.0
 IORB_OFFSET = 0.10
 SPLICE_DATE = "2002-01-01"
 
-LABELS = ("RATE", "QE_QT", "PLUMBING", "REGULATORY", "OTHER")
+LABELS = ("RATE", "QE_QT", "PLUMBING", "REGULATORY", "ADMIN", "OTHER")
 CLASSIFIER_CHECK_N = 50
 CLASSIFIER_MODEL = "glm-4.7-flash"
 MODEL_CMD = ""  # set to re-label, e.g. ollama run glm-4.7-flash

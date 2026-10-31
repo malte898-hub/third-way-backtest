@@ -16,5 +16,5 @@ Refresh via https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm (fee
 - Pre-2018 funding-stress proxy (EFFR − 3m bill) cannot observe repo.
 - Treasury actions almost unobserved (n=2 buyback files, 2026); corridor test is Fed-only. First Treasury-follows-breach year: 2026.
 - Episode-level Treasury sign hides intra-episode spikes (Mar 2020); see MAX_10Y_RISE_4W.
-- Classifier is an LLM on titles/bodies; 20 new-row spot-check in results/classifier_check_r22.csv. Implementation notes every ~6 weeks are often PLUMBING; 60-day clustering yields 6 episodes, 30-day clustering yields 52. QT/RMP language saturates R3 (Puncond>0.5).
+- Classifier: statements still LLM-on-bodies. Implementation notes default ADMIN and promote only on a Desk-directive operational change (RMP / SRF terms / ON RRP counterparty limit / new facility or swap / bill-purchase instructions → PLUMBING; reinvestment-cap or runoff-pace / purchase-programme start-taper → QE_QT; IORB/RRP/discount/primary-credit following the target range → ADMIN). Without this split, notes every ~6 weeks glue PLUMBING under a 30-day gap and push R3 Puncond above 0.5. 2.3: 34 ADMIN / 9 QE_QT / 4 PLUMBING notes; R3 Puncond=0.31. Spot-check: data/classifier_check_r23.csv.
 - Rolling regressions on 6m-forward S&P have low R² by nature (partial R² ≈ 0.08); claims are relative, not absolute.
